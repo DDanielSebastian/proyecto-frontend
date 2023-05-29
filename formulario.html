@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            formularios
+        </title>
+    </head>
+    <body>
+        <h1>formularios</h1>
+        <form>  <!--sintaxis para crear fromularios-->
+            <label>Nombre:</label><!--peticion de datos-->
+            <!--formato del texto a introducir -->
+           <input type="text"
+                  maxlength="10">
+                  <br>
+            <label>Password</label>
+            <input type="password">
+            <input type="submit" value="Enviar">
+            <!--crear boton para enviar los datos-->
+            
+        </form>
+        <!--permite generar cajas de eleccion en un formulario-->
+        <h1>formulario 2</h1>
+        <form> 
+            <ul>
+                <li>
+                    <input type="checkbox" 
+                    value="musica">
+                    <label>Opcion1</label>
+                </li>
+                <li>    
+                    <input type="checkbox" 
+                    value="series">
+                    <label>Opcion2</label>
+                </li>  
+            </ul>    
+            <!--sirve para generar un formulario donde solo se pueda elegir 
+            una opcion-->
+           <label>Opcion A</label>
+           <input type="radio" 
+                    value="A"
+                    name="opciones">
+            <label>Opcion B</label>
+            <input type="radio"
+                    value="B"
+                    name="opciones">
+        </form>
+        <a href="index.html">
+            Ir a index
+        </a>
+    </body>
+
+
+
+</html>
