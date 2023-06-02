@@ -6,22 +6,33 @@
         </title>
     </head>
     <body>
-        <h1>formularios</h1>
-        <form>  <!--sintaxis para crear fromularios-->
-            <label>Nombre:</label><!--peticion de datos-->
+        <h1>
+            formulario 1
+        </h1>
+        <form action="registrar-formulario.html"
+              method="post"> <!--sintaxis para crear fromularios-->
+            <label>
+                Nombre:
+            </label><!--peticion de datos-->
             <!--formato del texto a introducir -->
            <input type="text"
-                  maxlength="10">
+                  maxlength="10"
+                  size="20"
+                  name="nombre">
                   <br>
-            <label>Password</label>
-            <input type="password">
-            <input type="submit" value="Enviar">
-            <!--crear boton para enviar los datos-->
-            
-        </form>
+            <label>
+                Password
+            </label>
+            <input type="password"
+                    size="10"
+                    name="password">
+            <input type="submit" value="Enviar"> <!--crear boton para enviar los datos-->
+           
+            </form>
         <!--permite generar cajas de eleccion en un formulario-->
         <h1>formulario 2</h1>
-        <form> 
+        <form action="registrar-formulario.html"
+                method="post"> 
             <ul>
                 <li>
                     <input type="checkbox" 
@@ -44,6 +55,48 @@
             <input type="radio"
                     value="B"
                     name="opciones">
+
+            <input type="submit" value="Enviar">
+        </form>
+        <!--inputs para un formulario con tablas-->
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        Nombre:
+                    </td>
+                    <td>
+                        <input 
+                            name="nombre" 
+                            type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Fec Nac:
+                    </td>
+                    <td>
+                        <input 
+                            name="nombre" 
+                            type="date"
+                            >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Fec Nac:
+                    </td>
+                    <td>
+                        <input 
+                            name="nombre" 
+                            type="number"
+                             min="1"
+                              max="150"
+                              step="10">
+                    </td>
+                </tr>
+            </table>
+
         </form>
         <a href="index.html">
             Ir a index
