@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clasecss</title>
+    <!--hoja de estilo en cascada-->
+    <!--formas de usar css-->
+    <style>
+        /*asi se comenta en css*/
+        /* se hace referencia a la variable a utilizar*/
+        p{
+            color:brown;
+            font-size: 20px; /*tamaño de letra/ font=fuente*/
+            font-weight: bolder;
+        }
+        .otraClaseConFondoVerde{
+            background-color: green;
+        }
+        .section{
+            background-color: darkcyan;
+        }
+        #btn { /*se utiliza # cuando es un parametro que se encuentra dentro de una clase*/
+            background-color: blue;
+        }
+        .btn{
+            background-color: indianred;
+        }
+    </style>
+    <!--forma externa-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main> 
+        <section class="seccionPrincipal">  
+            <!--aplicar estilo a una sola linea-->
+            <h1 style="color:rgb(200, 20, 54)">CSS</h1> <!--rgb(red green blue va de 0 a 250, de negro a blanco)-->
+            <h2>Soy un subtitulo</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsa, recusandae officia veniam assumenda aliquid, ipsum quaerat, laborum natus hic cumque distinctio accusamus architecto culpa voluptas quisquam sit. Iure, odio?
+            </p>
+        </section>
+
+        <!--trabaja sobre el fondo de la parte que marcamos en el style-->
+        <section class="otraClaseConFondoVerde">
+            <h1>hola</h1>
+        </section>
+
+        <section class="section">
+            <form action="alta.html">
+                <!--el for se relaciona al id del input reconocer de donde proviene el dato-->
+               <label for="nombre">nombre</label>
+                <input id="nombre"
+                        type="text"
+                        maxlength="50"
+                        required>
+                <button id="btn"> <!--se genera un id para identificar el cambio-->
+                     Enviar
+                </button>
+                <button class="btn"><!--se hace con una clase preestablecida-->
+                     Enviar
+                </button>
+                <button class="btn"> 
+                     Enviar
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
