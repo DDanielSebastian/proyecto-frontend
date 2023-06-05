@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores de google</title>
+    <!--google font-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+        rel="stylesheet">
+    <style> /*para buscar un id no importa donde este contenido*/
+        /*atributo
+        el id tiene que ser exacto*/
+
+        [id= "jsid" ]{
+            color: blue;
+            text-transform:capitalize ; /*camel case(todas las palabras con la primera letra en mayuscula)*/
+        }
+
+        /*busca los atributos que contengan con una parte del id*/
+        [id*="css"]{
+            color: blueviolet;
+        }
+
+        /*busca atributos que inicien con el nombre del id*/
+        [id^="html"]{
+            font-style: italic;
+            padding-top: 10px ;
+        }
+
+        /*busca atributos que finalizan con una parte del id*/
+        [id$="Java"]{
+            text-transform: lowercase;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="html" 
+                id="htmlid">
+            <h2>HTML</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laboriosam laborum in earum molestiae autem fuga deserunt totam quod quia voluptatem minima et, quae, nobis corporis minus eum rem? Error.
+            </p>
+        </section>
+        <section class="css" 
+                id="cssid">
+            <h3>CSS</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laboriosam laborum in earum molestiae autem fuga deserunt totam quod quia voluptatem minima et, quae, nobis corporis minus eum rem? Error.
+            </p>
+        </section>
+        <section id="jsid">
+            <h3 >javascript</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, vitae nam omnis cumque asperiores nesciunt eaque quasi fugiat dolore ea exercitationem, possimus reiciendis libero odit assumenda nulla, repudiandae alias delectus!</p>
+        </section>
+        <section id="Java">
+            <h3>Java</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima exercitationem blanditiis quasi consectetur ad velit sapiente error beatae ullam neque tempora repudiandae, eaque vel sed ut a repellat sunt veritatis!</p>
+        </section>
+    </main>
+</body>
+</html>
