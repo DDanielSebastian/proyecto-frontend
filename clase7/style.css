@@ -1,0 +1,39 @@
+/* . para la clase/ # para referir a un id*/
+/*Selector de etiqueta*/
+
+p{
+    font-size: 20px;
+    font-family:'Roboto', sans-serif;
+}
+/*si quiero que todos tengan la misma fuente*/
+*{
+    font-size: 20px;
+    font-family:'Roboto', sans-serif;
+}
+/*herencia
+punto para hacer referencia a la clase en la que se trabaja*/
+main .html{
+    background-color: aqua;
+   
+}S
+ 
+main section{
+    background-color: bisque;
+}
+
+main section.css{
+    background-color: chocolate !important;
+}
+#htmlid{
+    width: 300px;
+    height: 125px;
+    padding-left: 10px;
+}
+/*especificidad
+los cambios tienen prioridad si se hacen inline(en el html) que en un archivo css
+style > etiqueta
+1- !important
+2-style/inline/ en html
+3-class
+4-etiqueta*/
+
