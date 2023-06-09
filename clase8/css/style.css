@@ -1,3 +1,44 @@
 body{
-    background-color: aqua;
+    background-color: rgb(151, 230, 230);
+    padding: 0%;
+    margin: 0px;
+}
+.menu{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    /*background-color: azure;*/
+    overflow: hidden;
+}
+.menu li{
+    float: left;  
+}
+li a{
+    padding: 15px;
+    border: 1px solid black;
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/*hover cambia de color un bloque al pasar el cursor por arriba*/
+a:hover{
+    background-color: rgb(247, 184, 103);
+}
+.contenido{
+    padding: 15px;
+}
+h1{
+    background-color: cadetblue;
+    color: darkblue;
+    padding-left: 0px;
+    margin: 0px;
+    border: solid black;
+    border-radius: 15px 10px;   
+}
+.active{
+    border: 2px solid darkgoldenrod; 
 }
