@@ -1,0 +1,87 @@
+p>strong{
+    color: brown;
+}
+div.div1.p{
+    font-size: 15px;
+}
+h1 + p{
+    font-weight: bolder;
+}
+/*hermano general
+alt + 126= ~*/
+h2 ~ p{
+    color: aqua;
+    height: 15px;
+    background-color: burlywood;
+    display: inline;
+} 
+/*pseudoclases*/
+a:visited{
+    color: black;
+}
+a:active{
+    color: cadetblue;
+}
+h1:hover{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img:hover{
+    width: 400px;
+    border: 5px solid blue;
+}
+/*hermanos adyacentes y generales admiten pseudoclases*/
+h1 ~ p:hover{
+    font-size: 50px;
+}
+div.primerHijo{
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 25px;
+}
+div.primerHijo p{
+    display: inline;
+}
+
+div.primerHijo p:first-child{
+    color: darkorange;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+div.primerHijo p:last-child{
+    color: darkolivegreen;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+section ol li:first-child{
+    color: red !important
+}
+
+section ol li:nth-child(odd){
+    color: blue;
+}
+
+section ol li:nth-child(even){
+    background-color: aquamarine;
+}
+table{
+    border: 1px solid black; 
+    padding: 0px;
+    border-spacing: 0px;
+    width: 500px;
+    height: 10px;
+}
+table tr:first-child{
+    background-color: aquamarine;
+}
+table tr:nth-child(2n+3){
+    background-color: blueviolet;
+}
+table tr:nth-child(2n){
+    background-color: yellow;
+}
+table tr:hover{
+    font-size: 2px;
+    color: coral;
+}
